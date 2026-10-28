@@ -1,10 +1,11 @@
 # main.py
 # Simple Discount Calculator
 # Note: This version intentionally contains a bug.
-
 def final_price(price, discount_percent):
-    # Bug: returns the original price without applying the discount
-    return price
+    discount = price * discount_percent / 100
+    return price - discount
+
+print(final_price(200, 20))  # Expected output: 160.0
 
 
 # Sample input
